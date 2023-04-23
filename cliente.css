@@ -1,0 +1,103 @@
+/* Define a altura total da página */
+html, body {
+    height: 100%;
+}
+
+/* Aplica um gradiente de fundo para a página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Define o tamanho máximo da largura da página */
+.container {
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aplica um estilo geral para os títulos */
+.title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Estiliza os campos de entrada de dados pessoais */
+.dadosPessoais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.dadosPessoais label {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dadosPessoais input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estiliza os campos de entrada do endereço */
+.endereço {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.endereço label {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.endereço input,
+.endereço select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estiliza o botão de envio */
+.btn-enviar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #3e8e41;
+}

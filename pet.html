@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pet.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</header>
+
+<body>
+    <div class="container">
+        <div>
+            <h2> CADASTRO PET </h2>
+        </div>
+
+        <div class="pesquisa-tutor">
+            <form class="form-pet">
+                <label>
+                    CPF do tutor:
+                    <input type="text" name="cpf-tutor" class="cpf-tutor">
+                </label>
+
+                <div class="botao">
+                    <button type="submit" class="btn btn-primary">
+                        <span class="material-symbols-outlined search">
+                            search
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="informacao-tutor">
+            <label>
+                Nome do tutor:
+                <input type="text" name="nome-tutor" class="nome-tutor">
+            </label>
+
+            <label for="cpf">CPF</label>
+            <input name="cpf" type="text" class="input cpf-tutor" />
+            <label>
+                Telefone:
+                <input type="text" name="telefone" class="telefone-tutor">
+            </label>
+
+            <label for="estado">Estado</label>
+            <select name="estado" class="input estado-tutor">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+            <label for="cidade">Cidade</label>
+            <input name="cidade" type="text" class="input cidade-tutor" />
+
+            <label for="Rua">Rua</label>
+            <input name="Rua" type="text" class="input rua-tutor" />
+
+            <label for="numero">Número</label>
+            <input name="numero" type="text" class="input numero-tutor" />
+        </div>
+
+        <br /> <br />
+
+        <div class="informacao-pet">
+            <form class="form-informacao-pet">
+                <label>
+                    Código do pet:
+                    <input type="text" name="codigo-pet" class="codigo-pet" readonly>
+                </label>
+                <label>
+                    Nome do pet:
+                    <input type="text" name="nome-pet" id="nome-pet">
+                </label>
+    
+                <label>
+                    Raça:
+                    <input type="text" name="raca" id="raca">
+                </label>
+    
+                <label>
+                    Idade:
+                    <input type="text" name="idade" id="idade">
+                </label>
+    
+                <label>
+                    Peso:
+                    <input type="text" name="peso" id="peso">
+                </label>
+    
+                <label>
+                    Sexo:
+                    <input type="text" name="sexo" id="sexo">
+                </label>
+    
+                <label>
+                    Cor:
+                    <input type="text" name="cor" id="cor">
+                </label>
+    
+                <label>
+                    Porte:
+                    <input type="text" name="porte" id="porte">
+                </label>
+    
+                <label>
+                    Tipo:
+                    <input type="text" name="tipo" id="tipo">
+                </label>
+    
+                <label>
+                    Observações:
+                    <textarea class="textarea">
+    
+                    </textarea>
+                </label>
+
+                <div class="botao">
+                    <button type="submit" class="btn btn-primary">
+                        <span class="material-symbols-outlined save">
+                            save
+                        </span>
+                    </button>
+                </div>
+        
+            </form>
+        </div>
+
+    </div>
+    <script src="pet.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+/* estilização geral */
+
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* estilização do formulário */
+
+.formulario {
+  margin-top: 20px;
+}
+
+.informacao-tutor {
+  margin-bottom: 20px;
+}
+
+.informacao-pet {
+  margin-top: 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"],
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #45a049;
+}
+
+/* estilização dos labels */
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+/* estilização dos inputs de texto */
+
+.input {
+  display: block;
+}
+
+.input-estado {
+  width: 50%;
+}
+
+.input-cidade {
+  width: 70%;
+}
+
+.input-rua {
+  width: 70%;
+}
+
+.input-numero {
+  width: 20%;
+}
+
+/* estilização do botão de busca */
+
+.btn {
+  background-color: #2196F3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0b7dda;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined', sans-serif;
+}
+
+/* estilização da área de observações */
+
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.textarea:focus {
+  border-color: #2196F3;
+}
+
+.btn-pesquisar {
+  background-color: #657d91;
+  color: white;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.informacao-tutor {
+  display: none;
+}

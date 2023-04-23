@@ -1,0 +1,100 @@
+/* Define a altura total da página */
+html, body {
+    height: 100%;
+  }
+  
+  /* Aplica um gradiente de fundo para a página */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(180deg, #f5f5f5 0%, #e8e8e8 100%);
+  }
+  
+  /* Define o tamanho máximo da largura da página */
+  .container {
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estiliza o campo CPF do tutor */
+  .cpf-tutor {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estiliza o botão de pesquisa do tutor */
+  .btn-primary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Estiliza o campo de seleção de pet */
+  .sel-pet {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estiliza o campo de seleção de procedimento */
+  .sel-proced {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estiliza o campo de seleção de prazo */
+  .sel-prazo {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estiliza o botão de envio */
+  .btn-enviar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-enviar:hover {
+    background-color: #3e8e41;
+  }
+  

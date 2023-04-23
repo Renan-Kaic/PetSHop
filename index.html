@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    <title>Home</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <button class="btn-menu">☰</button>
+            <ul>
+                <li>
+                    <button class="btn-menu-item btn-home">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                         Home
+                    </button>
+                    <div class="colapse-item colapse-home">
+                        <ul>
+                            <li> <button class="btn-item btn-item-cadCliente">Cadastro Cliente</button> </li>
+                            <li> <button class="btn-item btn-item-cadPet">Cadastro Pet</button> </li>
+                            <li> <button class="btn-item btn-item-proced">Marcar procedimento</button> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button class="btn-menu-item btn-dashboard">
+                        <span class="material-symbols-outlined">
+                            dashboard
+                        </span>
+                         Painel
+                    </button>
+                    <div class="colapse-item colapse-dashboard">
+                        <ul>
+                            <li><a href="#">Dashboard 1</a></li>
+                            <li><a href="#">Dashboard 2</a></li>
+                            <li><a href="#">Dashboard 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div  class="content">
+            <iframe src="./cliente.html" class="iframe iframe-cliente"></iframe>
+            <iframe src="./pet.html" class="iframe iframe-pet"></iframe>
+            <iframe src="./procedimento.html" class="iframe iframe-proced"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
