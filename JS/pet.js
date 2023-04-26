@@ -4,7 +4,6 @@ formInfoPet.style.display = 'none'
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-
     const cpf = document.querySelector('.cpf-tutor')
 
     const pets = JSON.parse(localStorage.getItem('clientes')) ?? {}
@@ -14,6 +13,8 @@ form.addEventListener('submit', (e) => {
         .replace('-', '')
     
     const pet = pets[chave]
+
+    console.log(pet)
 
     if (!pet) {
         alert('cliente não cadastrado')

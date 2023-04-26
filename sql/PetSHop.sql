@@ -1,0 +1,38 @@
+CREATE DATABASE IF NOT EXISTS petShop;
+
+USE petShop;
+
+CREATE TABLE IF NOT EXISTS cliente (
+    cpf VARCHAR(11) PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL,
+    telefone VARCHAR(15) NOT NULL,
+    rua VARCHAR(20) NOT NULL,
+    bairro VARCHAR(10) NOT NULL,
+    cidade VARCHAR(12) NOT NULL,
+    estado VARCHAR(10) NOT NULL,
+    num INT NOT NULL
+)
+
+CREATE TABLE IF NOT EXISTS  Pets (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    nomePet VARCHAR(50) NOT NULL,
+    raca VARCHAR(30) NOT NULL,
+    idade INT NOT NULL,
+    peso FLOAT NOT NULL,
+    sexo VARCHAR(10) NOT NULL,
+    cor VARCHAR(10) NOT NULL,
+    porte VARCHAR(10) NOT NULL,
+    tipo VARCHAR(10) NOT NULL,
+    observacoes VARCHAR(250) NOT NULL,
+    cpf VARCHAR(11) NOT NULL, 
+    FOREIGN KEY (cpf) REFERENCES cliente(cpf)
+)
+
+CREATE TABLE IF NOT EXISTS procedimento (
+    IDPROC INT PRIMARY KEY AUTO_INCREMENT,
+    procedimento VARCHAR(30) NOT NULL,
+    prazo DATE NOT NULL,
+    ID INT NOT NULL,
+    FOREIGN KEY (ID) REFERENCES Pets(ID)
+)

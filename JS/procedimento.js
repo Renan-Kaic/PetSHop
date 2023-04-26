@@ -15,7 +15,7 @@ formTutor.addEventListener('submit', (e) => {
     const pets = Object.values(pet).filter(p => p.cpf === json.cpftutor)
 
     if (pets.length === 0) {
-        alert('Cliente/pets não cadastrado')
+        alert('pets não cadastrado')
         return
     }
 
